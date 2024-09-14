@@ -28,6 +28,13 @@ body {
     width: 100px;
 }
 
+/* Media Query pour les appareils mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+   .logo img {
+        width: 50px;
+    }
+}
+
 /* Section conseil sportif */
 .conseil-section {
     margin: 50px 80px;
@@ -47,7 +54,7 @@ h1 {
     h1 {
         font-weight: 750;  /* Poids 750 pour Syne */
         margin: 50px 30px
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
 
