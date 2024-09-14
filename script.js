@@ -99,8 +99,7 @@ const conseils = [
     "Introduis des séances de méditation après l'entraînement pour une récupération mentale.",
     "Inclut des exercices de pliométrie pour améliorer la coordination motrice.",
     "Programme des séances d'entraînement en duo pour la motivation mutuelle.",
-    "Sois consistent(e) et persévérant(e) dans ta démarche, les résultats viendront.".
-
+    "Sois consistent(e) et persévérant(e) dans ta démarche, les résultats viendront."
 ];
 
 // Fonction pour afficher un conseil aléatoire
