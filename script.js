@@ -3,7 +3,7 @@ let conseils = [];
 
 // Fonction pour charger les conseils depuis le fichier CSV
 function chargerConseils() {
-    const csvFilePath = 'path/to/liste_conseils.csv'; // Remplacez par le chemin correct vers votre fichier CSV
+    const csvFilePath = 'liste_conseils.csv'; // Remplacez par le chemin correct vers votre fichier CSV
 
     fetch(csvFilePath)
         .then(response => {
