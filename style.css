@@ -10,8 +10,8 @@ body {
     align-items: center;
     height: 100vh;
     background-image: url('Background.svg');
-    background-size: 100% 100%;
-    background-position: center;  /* Centrer l'image */
+    background-size: cover;
+    background-position: left top;
     background-repeat: no-repeat;  /* Empêche l'image de se répéter */
     color: white;
     font-family: 'Roboto', sans-serif;  /* Roboto Light comme police par défaut */
