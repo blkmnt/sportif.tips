@@ -14,8 +14,8 @@ body {
     background-position: center;  /* Centrer l'image */
     background-repeat: no-repeat;  /* Empêche l'image de se répéter */
     height: 100vh;  /* Assure que le background couvre la totalité de la hauteur de l'écran */
-    margin: 0;
-    padding: 80;
+    margin: 80;
+    padding: 0;
     color: white;
     font-family: 'Roboto', sans-serif;  /* Roboto Light comme police par défaut */
     font-weight: 300;  /* Roboto Light (poids 300) */
