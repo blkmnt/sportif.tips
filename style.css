@@ -13,7 +13,7 @@ body {
     background-size: cover;  /* L'image couvre toute la page */
     background-position: center;  /* Centrer l'image */
     background-repeat: no-repeat;  /* Empêche l'image de se répéter */
-    height: 100%;  /* Assure que le background couvre la totalité de la hauteur de l'écran */
+    height: 100vh;  /* Assure que le background couvre la totalité de la hauteur de l'écran */
     margin: 0;
     padding: 0;
     color: white;
