@@ -49,7 +49,7 @@ h1 {
 /* Bouton pour rafraîchir */
 .refresh-btn {
     background-color: #FFFFFF;
-    color: #081655;
+    color: #03045E;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -59,7 +59,7 @@ h1 {
 }
 
 .refresh-btn:hover {
-    background-color: #1b4079;
+    background-color: #03045E;
     color: #FFFFFF;
 }
 
