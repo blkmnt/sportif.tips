@@ -36,6 +36,7 @@ body {
 /* Style pour le logo */
 .logo img {
     width: 100px;
+    margin-bottom: 40px;
 }
 
 /* Media Query pour les appareils mobiles (max-width: 768px) */
@@ -67,7 +68,7 @@ h1 {
     font-family: 'Syne', sans-serif; /* Utilisation de Syne pour le conseil sportif */
     font-weight: 800; /* Poids 800 pour Syne */
     font-size: 2rem;
-    margin: 25px 80px 20px; /* Ajuste les marges pour être plus cohérent */
+    margin: 20px 80px; /* Ajuste les marges pour être plus cohérent */
     color: #FFFFFF;
 }
 
@@ -76,7 +77,7 @@ h1 {
     h1 {
         font-family: 'Syne', sans-serif; /* Utilisation de Syne pour le conseil sportif */
         font-weight: 750;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         margin: 20px 0; /* Ajuste les marges pour être plus cohérent sur mobile */
     }
 }
