@@ -1,3 +1,6 @@
+/* Importation des polices Syne et Roboto depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Syne:wght@800&display=swap');
+
 /* Style global */
 body {
     margin: 0;
@@ -14,6 +17,8 @@ body {
     margin: 0;
     padding: 0;
     color: white;
+    font-family: 'Roboto', sans-serif;  /* Roboto Light comme police par défaut */
+    font-weight: 300;  /* Roboto Light (poids 300) */
 }
 
 /* Conteneur principal */
@@ -32,7 +37,10 @@ body {
     margin-bottom: 30px;
 }
 
+/* Style pour le texte du conseil sportif en Syne */
 h1 {
+    font-family: 'Syne', sans-serif;  /* Utilisation de Syne pour le conseil sportif */
+    font-weight: 800;  /* Poids 800 pour Syne */
     font-size: 2rem;
     margin-bottom: 20px;
     color: #FFFFFF;
