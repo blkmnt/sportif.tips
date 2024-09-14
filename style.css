@@ -18,6 +18,13 @@ body {
     font-weight: 300;  /* Roboto Light (poids 300) */
 }
 
+/* Media Query pour les appareils mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+   body {
+        background-image: url('Background_mobile.svg');
+    }
+}
+
 /* Conteneur principal */
 .container {
     text-align: center;
