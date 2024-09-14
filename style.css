@@ -13,9 +13,6 @@ body {
     background-size: cover;  /* L'image couvre toute la page */
     background-position: center;  /* Centrer l'image */
     background-repeat: no-repeat;  /* Empêche l'image de se répéter */
-    height: 100vh;  /* Assure que le background couvre la totalité de la hauteur de l'écran */
-    margin: 0;
-    padding: 0;
     color: white;
     font-family: 'Roboto', sans-serif;  /* Roboto Light comme police par défaut */
     font-weight: 300;  /* Roboto Light (poids 300) */
@@ -33,11 +30,15 @@ body {
 
 /* Section conseil sportif */
 .conseil-section {
-    margin: 50px;
+    margin: 50px;  /* Marge de 50px par défaut */
+}
 
-     @media (max-width: $mobile-max-width) {
-        margin: 50px 20px;
-        text-align: left;
+/* Media Query pour les appareils mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+    .conseil-section {
+        margin: 50px 20px;  /* Marge de 20px pour les petits écrans */
+        text-align: left;  /* Aligner le texte à gauche pour les petits écrans */
+    }
 }
 
 /* Style pour le texte du conseil sportif en Syne */
