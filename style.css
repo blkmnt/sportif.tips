@@ -43,7 +43,6 @@ h1 {
     font-weight: 800;  /* Poids 800 pour Syne */
     font-size: 2rem;
     margin-bottom: 20px;
-    padding: 60px
     color: #FFFFFF;
 }
 
@@ -55,7 +54,7 @@ h1 {
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 99px;
     transition: background-color 0.3s ease;
 }
 
