@@ -9,13 +9,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #FFF000;
+    background-color: #00B4D8;
     background-size: cover;  /* L'image couvre toute la page */
     background-position: center;  /* Centrer l'image */
     background-repeat: no-repeat;  /* Empêche l'image de se répéter */
     height: 100vh;  /* Assure que le background couvre la totalité de la hauteur de l'écran */
     margin: 0;
-    padding: 0;
+    padding: 80;
     color: white;
     font-family: 'Roboto', sans-serif;  /* Roboto Light comme police par défaut */
     font-weight: 300;  /* Roboto Light (poids 300) */
