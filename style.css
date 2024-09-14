@@ -11,7 +11,7 @@ body {
     height: 100vh;
     background-image: url('Background.svg');
     background-size: cover;
-    background-position: left top;
+    background-position: center;
     background-repeat: no-repeat;  /* Empêche l'image de se répéter */
     color: white;
     font-family: 'Roboto', sans-serif;  /* Roboto Light comme police par défaut */
@@ -52,7 +52,7 @@ h1 {
 /* Media Query pour les appareils mobiles (max-width: 768px) */
 @media (max-width: 768px) {
     h1 {
-        font-weight: 750;  /* Poids 750 pour Syne */
+        font-weight: 600;
         margin: 50px 25px
         font-size: 1rem;
     }
