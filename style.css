@@ -6,10 +6,9 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Permet le centrage vertical du contenu */
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Assure que le corps couvre la hauteur minimale de l'écran */
+    min-height: 100vh; /* Utilise min-height pour s'assurer que le body couvre la hauteur minimale */
     background-image: url('Background.svg');
     background-size: cover;
     background-position: center;
@@ -18,7 +17,6 @@ body {
     font-family: 'Roboto', sans-serif; /* Roboto Light comme police par défaut */
     font-weight: 300; /* Roboto Light (poids 300) */
     overflow: hidden; /* Évite le défilement non désiré */
-    position: relative; /* Nécessaire pour le positionnement absolu des éléments internes */
 }
 
 /* Media Query pour les appareils mobiles (max-width: 768px) */
@@ -36,13 +34,6 @@ body {
 }
 
 /* Style pour le logo */
-.logo {
-    position: fixed; /* Fixe le logo à une position fixe */
-    top: 20px; /* Positionne le logo en haut à 20px du bord supérieur */
-    left: 20px; /* Positionne le logo à gauche à 20px du bord gauche */
-    z-index: 10; /* Assure que le logo est au-dessus du contenu */
-}
-
 .logo img {
     width: 100px;
 }
@@ -76,7 +67,7 @@ h1 {
     h1 {
         font-family: 'Syne', sans-serif; /* Utilisation de Syne pour le conseil sportif */
         font-weight: 750;
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 20px 0; /* Ajuste les marges pour être plus cohérent sur mobile */
     }
 }
@@ -100,14 +91,8 @@ h1 {
 
 /* Footer pour le lien Instagram */
 .footer {
-    position: fixed; /* Fixe le footer à une position fixe */
-    bottom: 20px; /* Positionne le footer en bas à 20px du bord inférieur */
-    left: 0; /* Positionne le footer à gauche du bord de l'écran */
-    width: 100%; /* Assure que le footer occupe toute la largeur de l'écran */
+    margin-top: 40px;
     text-align: center; /* Centre le texte du footer */
-    z-index: 10; /* Assure que le footer est au-dessus du contenu */
-    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le footer, si souhaité */
-    padding: 10px 0; /* Ajoute du padding au footer */
 }
 
 .footer p {
