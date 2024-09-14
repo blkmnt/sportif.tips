@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('https://raw.githubusercontent.com/blkmnt/sportif.tips/main/Background.svg');
+    background-image: url('https://raw.githubusercontent.com/blkmnt/sportif.tips/a61933e84a815e703433be9c04d0c8c38cada59c/Background.svg');
     background-size: cover;  /* L'image couvre toute la page */
     background-position: center;  /* Centrer l'image */
     background-repeat: no-repeat;  /* Empêche l'image de se répéter */
