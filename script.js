@@ -1,38 +1,33 @@
-// Variable pour stocker les conseils
-let conseils = [];
-
-// Fonction pour charger les conseils depuis le fichier CSV
-function chargerConseils() {
-    const csvFilePath = 'liste_conseils.csv'; // Remplacez par le chemin correct vers votre fichier CSV
-
-    fetch(csvFilePath)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.text();
-        })
-        .then(text => {
-            // Convertir le texte CSV en un tableau de conseils
-            conseils = text.split('\n').map(line => line.trim()).filter(line => line.length > 0);
-            console.log(conseils);
-
-            // Afficher un conseil après avoir chargé les données
-            afficherConseil();
-        })
-        .catch(error => console.error('Il y a eu un problème avec la récupération du fichier CSV:', error));
+// Fonction pour lire le CSV
+async function lireCSV(url) {
+    const response = await fetch(url);
+    const data = await response.text();
+    const rows = data.split('\n').filter(row => row.trim() !== '');
+    const conseils = [];
+    rows.forEach(row => {
+        const [conseil, animationUrl] = row.split(',');
+        conseils.push({ conseil: conseil.trim(), animationUrl: animationUrl.trim() });
+    });
+    return conseils;
 }
 
-// Fonction pour afficher un conseil aléatoire
+// Charger les conseils depuis le CSV
+let conseils = [];
+lireCSV('liste_conseils.csv').then(data => {
+    conseils = data;
+    afficherConseil();
+});
+
+// Fonction pour afficher un conseil aléatoire avec animation
 function afficherConseil() {
     if (conseils.length === 0) {
-        console.error('La liste des conseils est vide.');
+        document.getElementById('conseil').innerText = 'Aucun conseil disponible.';
+        document.getElementById('animation').src = '';
         return;
     }
-
     const index = Math.floor(Math.random() * conseils.length);
-    document.getElementById('conseil').innerText = conseils[index];
+    const conseil = conseils[index].conseil;
+    const animationUrl = conseils[index].animationUrl;
+    document.getElementById('conseil').innerText = conseil;
+    document.getElementById('animation').src = animationUrl;
 }
-
-// Charger les conseils au chargement de la page
-window.onload = chargerConseils;
