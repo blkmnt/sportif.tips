@@ -53,6 +53,15 @@ body {
     box-sizing: border-box; /* Inclut les marges et les bordures dans la largeur totale */
 }
 
+/* Style pour l'image de l'animation */
+.animation-img {
+    width: 50px; /* Largeur fixe */
+    height: 50px; /* Hauteur fixe */
+    display: block; /* Évite l'espacement en dessous de l'image */
+    margin: 0 auto; /* Centre l'image horizontalement */
+}
+
+
 /* Style pour le texte du conseil sportif en Syne */
 h1 {
     font-family: 'Syne', sans-serif; /* Utilisation de Syne pour le conseil sportif */
