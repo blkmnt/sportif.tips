@@ -9,17 +9,15 @@ async function lireCSV(url) {
         const rows = data.split('\n').filter(row => row.trim() !== '');
         const conseils = [];
         rows.forEach(row => {
-            // Diviser chaque ligne en colonnes
-            const columns = row.split(',');
+            // Diviser chaque ligne en colonnes avec point-virgule comme séparateur
+            const columns = row.split(';').map(column => column.trim().replace(/^"|"$/g, ''));
             // Vérifier que la ligne contient bien deux colonnes
             if (columns.length >= 2) {
                 // Extraire le conseil et l'URL de l'animation
-                const conseil = columns[0].trim().replace(/^"|"$/g, '');
-                const animationUrl = columns[1].trim().replace(/^"|"$/g, '');
-                // Nettoyer l'URL de l'animation
-                const cleanedUrl = animationUrl.replace(/^"(.*)"$/, '$1');
-                if (conseil && cleanedUrl) {
-                    conseils.push({ conseil, animationUrl: cleanedUrl });
+                const conseil = columns[0];
+                const animationUrl = columns[1];
+                if (conseil && animationUrl) {
+                    conseils.push({ conseil, animationUrl });
                 }
             }
         });
