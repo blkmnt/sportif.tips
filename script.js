@@ -16,8 +16,10 @@ async function lireCSV(url) {
                 // Extraire le conseil et l'URL de l'animation
                 const conseil = columns[0].trim().replace(/^"|"$/g, '');
                 const animationUrl = columns[1].trim().replace(/^"|"$/g, '');
-                if (conseil && animationUrl) {
-                    conseils.push({ conseil, animationUrl });
+                // Nettoyer l'URL de l'animation
+                const cleanedUrl = animationUrl.replace(/^"(.*)"$/, '$1');
+                if (conseil && cleanedUrl) {
+                    conseils.push({ conseil, animationUrl: cleanedUrl });
                 }
             }
         });
