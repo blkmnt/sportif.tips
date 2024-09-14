@@ -30,7 +30,7 @@ body {
 
 /* Section conseil sportif */
 .conseil-section {
-    margin: 50px;  /* Marge de 50px par défaut */
+    margin: 80px;
 }
 
 /* Style pour le texte du conseil sportif en Syne */
@@ -47,6 +47,7 @@ h1 {
     h1 {
         font-weight: 750;  /* Poids 750 pour Syne */
         margin: 50px 30px
+        font-size: 1.5rem;
     }
 }
 
