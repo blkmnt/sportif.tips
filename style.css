@@ -48,7 +48,7 @@ body {
 /* Section conseil sportif */
 .conseil-section {
     margin: 0; /* Supprime les marges */
-    padding: 20px; /* Ajoute du padding au lieu de marges pour éviter les débordements */
+    padding: 50px 80px; /* Ajoute du padding au lieu de marges pour éviter les débordements */
     width: 100%; /* Assure que la section utilise toute la largeur de l'écran */
     box-sizing: border-box; /* Inclut les marges et les bordures dans la largeur totale */
 }
