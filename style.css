@@ -33,14 +33,6 @@ body {
     margin: 50px;  /* Marge de 50px par défaut */
 }
 
-/* Media Query pour les appareils mobiles (max-width: 768px) */
-@media (max-width: 768px) {
-    .conseil-section {
-        margin: 50px 20px;  /* Marge de 20px pour les petits écrans */
-        text-align: left;  /* Aligner le texte à gauche pour les petits écrans */
-    }
-}
-
 /* Style pour le texte du conseil sportif en Syne */
 h1 {
     font-family: 'Syne', sans-serif;  /* Utilisation de Syne pour le conseil sportif */
@@ -48,6 +40,14 @@ h1 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #FFFFFF;
+}
+
+/* Media Query pour les appareils mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-weight: 750;  /* Poids 750 pour Syne */
+        margin: 50px 30px
+    }
 }
 
 /* Bouton pour rafraîchir */
