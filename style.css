@@ -10,7 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     background-image: url('Background.svg');
-    background-size: cover;  /* L'image couvre toute la page */
+    background-size: 100% 100%;
     background-position: center;  /* Centrer l'image */
     background-repeat: no-repeat;  /* Empêche l'image de se répéter */
     color: white;
