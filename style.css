@@ -8,19 +8,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Utilise min-height pour s'assurer que le body couvre la hauteur minimale */
     background-image: url('Background.svg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;  /* Empêche l'image de se répéter */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter */
     color: white;
-    font-family: 'Roboto', sans-serif;  /* Roboto Light comme police par défaut */
-    font-weight: 300;  /* Roboto Light (poids 300) */
+    font-family: 'Roboto', sans-serif; /* Roboto Light comme police par défaut */
+    font-weight: 300; /* Roboto Light (poids 300) */
+    overflow: hidden; /* Évite le défilement non désiré */
 }
 
 /* Media Query pour les appareils mobiles (max-width: 768px) */
 @media (max-width: 768px) {
-   body {
+    body {
         background-image: url('Background_mobile.svg');
     }
 }
@@ -28,6 +29,8 @@ body {
 /* Conteneur principal */
 .container {
     text-align: center;
+    width: 100%; /* Assure que le conteneur utilise toute la largeur de l'écran */
+    box-sizing: border-box; /* Inclut les marges et les bordures dans la largeur totale */
 }
 
 /* Style pour le logo */
@@ -37,32 +40,35 @@ body {
 
 /* Media Query pour les appareils mobiles (max-width: 768px) */
 @media (max-width: 768px) {
-   .logo img {
+    .logo img {
         width: 75px;
     }
 }
 
 /* Section conseil sportif */
 .conseil-section {
-    margin: 50px 80px;
+    margin: 0; /* Supprime les marges */
+    padding: 20px; /* Ajoute du padding au lieu de marges pour éviter les débordements */
+    width: 100%; /* Assure que la section utilise toute la largeur de l'écran */
+    box-sizing: border-box; /* Inclut les marges et les bordures dans la largeur totale */
 }
 
 /* Style pour le texte du conseil sportif en Syne */
 h1 {
-    font-family: 'Syne', sans-serif;  /* Utilisation de Syne pour le conseil sportif */
-    font-weight: 800;  /* Poids 800 pour Syne */
+    font-family: 'Syne', sans-serif; /* Utilisation de Syne pour le conseil sportif */
+    font-weight: 800; /* Poids 800 pour Syne */
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin: 20px 0; /* Ajuste les marges pour être plus cohérent */
     color: #FFFFFF;
 }
 
 /* Media Query pour les appareils mobiles (max-width: 768px) */
 @media (max-width: 768px) {
     h1 {
-        font-family: 'Syne', sans-serif;  /* Utilisation de Syne pour le conseil sportif */
+        font-family: 'Syne', sans-serif; /* Utilisation de Syne pour le conseil sportif */
         font-weight: 750;
-        margin: 50px 25px;
         font-size: 1.5rem;
+        margin: 20px 0; /* Ajuste les marges pour être plus cohérent sur mobile */
     }
 }
 
@@ -86,6 +92,7 @@ h1 {
 /* Footer pour le lien Instagram */
 .footer {
     margin-top: 40px;
+    text-align: center; /* Centre le texte du footer */
 }
 
 .footer p {
