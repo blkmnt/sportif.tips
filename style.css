@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #00B4D8;
+    background-image: url('main/Background.svg');
     background-size: cover;  /* L'image couvre toute la page */
     background-position: center;  /* Centrer l'image */
     background-repeat: no-repeat;  /* Empêche l'image de se répéter */
