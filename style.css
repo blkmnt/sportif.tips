@@ -53,8 +53,8 @@ h1 {
 @media (max-width: 768px) {
     h1 {
         font-weight: 750;  /* Poids 750 pour Syne */
-        margin: 50px 30px
-        font-size: 1.25rem;
+        margin: 50px 25px
+        font-size: 1rem;
     }
 }
 
