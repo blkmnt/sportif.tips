@@ -14,7 +14,7 @@ body {
     background-position: center;  /* Centrer l'image */
     background-repeat: no-repeat;  /* Empêche l'image de se répéter */
     height: 100vh;  /* Assure que le background couvre la totalité de la hauteur de l'écran */
-    margin: 80;
+    margin: 0;
     padding: 0;
     color: white;
     font-family: 'Roboto', sans-serif;  /* Roboto Light comme police par défaut */
@@ -43,6 +43,7 @@ h1 {
     font-weight: 800;  /* Poids 800 pour Syne */
     font-size: 2rem;
     margin-bottom: 20px;
+    padding: 60px
     color: #FFFFFF;
 }
 
