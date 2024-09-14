@@ -34,6 +34,10 @@ body {
 /* Section conseil sportif */
 .conseil-section {
     margin: 50px;
+
+     @media (max-width: $mobile-max-width) {
+        margin: 20px 50px;
+        text-align: left;
 }
 
 /* Style pour le texte du conseil sportif en Syne */
