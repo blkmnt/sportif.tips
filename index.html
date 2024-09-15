@@ -18,22 +18,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background-blur"></div> <!-- Arrière-plan avec effet flou -->
     <div class="container">
-        <!-- Logo en haut de la page -->
         <div class="logo">
             <img src="LogoST.svg" alt="Logo" />
         </div>
         
-        <!-- Conseil sportif -->
         <div class="conseil-section">
-            <!-- Image pour l'animation de l'emoji -->
-            <img id="animation" src="" alt="Animation Emoji" class="animation-img">
-            <h1 id="conseil">Chargement des conseils...</h1>
-            <!-- Bouton pour rafraîchir le conseil -->
+            <h1 id="conseil"></h1>
+            <img id="emoji" src="" alt="Emoji associé" class="animation-img" />
             <button onclick="afficherConseil()" class="refresh-btn">Nouveau conseil</button>
         </div>
 
-        <!-- Lien vers Instagram en bas -->
         <div class="footer">
             <p>Retrouvez-nous sur Instagram <b>@sportif.tips</b></p>
             <a href="https://www.instagram.com/sportif.tips/" target="_blank">
@@ -42,7 +38,6 @@
         </div>
     </div>
 
-    <!-- Lien vers le script JS -->
     <script src="script.js"></script>
 </body>
 </html>
