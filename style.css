@@ -1,3 +1,6 @@
+/* Importation des polices Syne et Roboto depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Syne:wght@800&family=Syne:wght@750&display=swap');
+
 /* Style global */
 body {
     margin: 0;
@@ -5,19 +8,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; /* Utilise min-height pour s'assurer que le body couvre la hauteur minimale */
+    background-image: url('Background.svg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /* Empêche l'image de se répéter */
     color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    overflow: hidden;
-    position: relative; /* Nécessaire pour que le background soit en position absolue */
+    font-family: 'Roboto', sans-serif; /* Roboto Light comme police par défaut */
+    font-weight: 300; /* Roboto Light (poids 300) */
+    overflow: hidden; /* Évite le défilement non désiré */
 }
 
-/* Image de fond rotative */
-.background-blur {
+/* Media Query pour les appareils mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        background-image: url('Background_mobile.svg');
+    }
+}
+
+body::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -27,42 +37,63 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(5px);
-    z-index: -1;
-    transition: transform 0.5s ease; /* Transition fluide pour la rotation */
+    filter: blur(10px); /* Applique un flou de 10px */
+    z-index: -1; /* Envoie l'image à l'arrière-plan pour ne pas couvrir le contenu */
 }
 
 /* Conteneur principal */
 .container {
     text-align: center;
-    width: 100%;
-    box-sizing: border-box;
+    width: 100%; /* Assure que le conteneur utilise toute la largeur de l'écran */
+    box-sizing: border-box; /* Inclut les marges et les bordures dans la largeur totale */
+}
+
+/* Style pour le logo */
+.logo img {
+    width: 100px;
+    margin-bottom: 40px;
+}
+
+/* Media Query pour les appareils mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+    .logo img {
+        width: 75px;
+    }
+}
+
+/* Section conseil sportif */
+.conseil-section {
+    margin: 0; /* Supprime les marges */
+    padding: 20px; /* Ajoute du padding au lieu de marges pour éviter les débordements */
+    width: 100%; /* Assure que la section utilise toute la largeur de l'écran */
+    box-sizing: border-box; /* Inclut les marges et les bordures dans la largeur totale */
 }
 
 /* Style pour l'image de l'animation */
 .animation-img {
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin: 0 auto;
+    width: 50px; /* Largeur fixe */
+    height: 50px; /* Hauteur fixe */
+    display: block; /* Évite l'espacement en dessous de l'image */
+    margin: 0 auto; /* Centre l'image horizontalement */
 }
 
-/* Style pour le texte du conseil sportif */
+
+/* Style pour le texte du conseil sportif en Syne */
 h1 {
-    font-family: 'Syne', sans-serif;
-    font-weight: 800;
+    font-family: 'Syne', sans-serif; /* Utilisation de Syne pour le conseil sportif */
+    font-weight: 800; /* Poids 800 pour Syne */
     font-size: 2rem;
-    margin: 20px 120px;
+    margin: 20px 120px; /* Ajuste les marges pour être plus cohérent */
     color: #FFFFFF;
 }
 
+/* Media Query pour les appareils mobiles (max-width: 768px) */
 @media (max-width: 768px) {
-    body {
-        background-image: url('Background_mobile.svg');
-    }
     h1 {
+        font-family: 'Syne', sans-serif; /* Utilisation de Syne pour le conseil sportif */
+        font-weight: 750;
         font-size: 1.75rem;
-        margin: 20px 0;
+        margin: 20px 0; /* Ajuste les marges pour être plus cohérent sur mobile */
     }
 }
 
@@ -83,10 +114,10 @@ h1 {
     color: #FFFFFF;
 }
 
-/* Footer */
+/* Footer pour le lien Instagram */
 .footer {
     margin-top: 40px;
-    text-align: center;
+    text-align: center; /* Centre le texte du footer */
 }
 
 .footer p {
