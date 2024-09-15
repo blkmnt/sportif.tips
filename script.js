@@ -59,5 +59,17 @@ document.addEventListener('keydown', function(event) {
     if (event.code === 'Space') { // Vérifie si la touche est la barre d'espace
         event.preventDefault(); // Empêche le comportement par défaut de la barre d'espace (scrolling)
         afficherConseil();
+        activerHoverBtn();
     }
 });
+
+// Fonction pour activer l'effet de hover sur le bouton
+function activerHoverBtn() {
+    const bouton = document.querySelector('.refresh-btn');
+    bouton.classList.add('hover');
+
+    // Retirer la classe après un court délai pour simuler l'effet de hover
+    setTimeout(() => {
+        bouton.classList.remove('hover');
+    }, 100); // Le délai doit correspondre à la durée de l'effet de hover
+}
