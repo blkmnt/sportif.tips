@@ -53,3 +53,11 @@ function afficherConseil() {
     // Mettre à jour l'URL de l'animation
     document.getElementById('animation').src = animationUrl;
 }
+
+// Écouter l'événement keydown pour changer le conseil avec la barre d'espace
+document.addEventListener('keydown', function(event) {
+    if (event.code === 'Space') { // Vérifie si la touche est la barre d'espace
+        event.preventDefault(); // Empêche le comportement par défaut de la barre d'espace (scrolling)
+        afficherConseil();
+    }
+});
