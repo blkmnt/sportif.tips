@@ -71,5 +71,5 @@ function activerHoverBtn() {
     // Retirer la classe après un court délai pour simuler l'effet de hover
     setTimeout(() => {
         bouton.classList.remove('hover');
-    }, 1500); // Le délai doit correspondre à la durée de l'effet de hover
+    }, 750); // Le délai doit correspondre à la durée de l'effet de hover
 }
