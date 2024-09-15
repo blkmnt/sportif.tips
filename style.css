@@ -26,6 +26,21 @@ body {
     }
 }
 
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px); /* Applique un flou de 10px */
+    z-index: -1; /* Envoie l'image à l'arrière-plan pour ne pas couvrir le contenu */
+}
+
 /* Conteneur principal */
 .container {
     text-align: center;
