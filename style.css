@@ -8,32 +8,18 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Utilise min-height pour s'assurer que le body couvre la hauteur minimale */
-    position: relative; /* Nécessaire pour le pseudo-élément avant */
+    background-image: url('Background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Empêche l'image de se répéter */
     color: white;
     font-family: 'Roboto', sans-serif; /* Roboto Light comme police par défaut */
     font-weight: 300; /* Roboto Light (poids 300) */
     overflow: hidden; /* Évite le défilement non désiré */
 }
-
-/* Ajouter un arrière-plan flouté via un pseudo-élément ::before */
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('Background.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; /* Empêche l'image de se répéter */
-    filter: blur(7px);
-    z-index: -1; /* Place l'image à l'arrière-plan pour ne pas couvrir le contenu */
-}
-
 /* Media Query pour les appareils mobiles (max-width: 768px) */
 @media (max-width: 768px) {
-    body::before {
+    body {
         background-image: url('Background_mobile.svg');
     }
 }
