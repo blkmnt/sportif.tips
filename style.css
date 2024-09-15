@@ -83,7 +83,9 @@ h1 {
     border-radius: 99px;
     transition: background-color 0.3s ease;
 }
-.refresh-btn:hover {
+/* Effet de hover pour le bouton */
+.refresh-btn:hover,
+.refresh-btn.hover { /* Ajoute la classe hover ici */
     background-color: #03045E;
     color: #FFFFFF;
 }
