@@ -1,8 +1,15 @@
 <svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_203_918)">
+<g filter="url(#filter0_f_203_918)">
 <rect x="-100" y="-90" width="2119" height="1261" fill="url(#pattern0_203_918)"/>
 </g>
+</g>
 <defs>
+<filter id="filter0_f_203_918" x="-125" y="-115" width="2169" height="1311" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="12.5" result="effect1_foregroundBlur_203_918"/>
+</filter>
 <pattern id="pattern0_203_918" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_203_918" transform="matrix(0 -0.00090192 0.000732919 0 0.00580779 0.990741)"/>
 </pattern>
